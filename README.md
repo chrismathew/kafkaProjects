@@ -1,2 +1,1 @@
-# kafkaProjectsSOMETHING CHANGED IN KAFKA
-"Changes on Oct 10th 2018" 
+"additional changes to kafka version 2 branch" 
