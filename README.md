@@ -7,6 +7,8 @@ https://www.sohamkamani.com/blog/2017/11/22/how-to-install-and-run-kafka/
 
 https://www.confluent.io/blog/apache-kafka-spring-boot-application/
 
+https://www.onlinetutorialspoint.com/spring-boot/sending-spring-boot-kafka-json-message-to-kafka-topic.html
+https://codenotfound.com/blog/
 
 GITBASH
 --------------------------------
