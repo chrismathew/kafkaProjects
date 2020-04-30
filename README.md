@@ -10,6 +10,9 @@ https://www.confluent.io/blog/apache-kafka-spring-boot-application/
 https://www.onlinetutorialspoint.com/spring-boot/sending-spring-boot-kafka-json-message-to-kafka-topic.html
 https://codenotfound.com/blog/
 
+https://medium.com/talking-tech-all-around/how-to-enable-and-verify-client-authentication-in-kafka-21e936e670e8
+https://docs.confluent.io/2.0.0/kafka/ssl.html
+
 GITBASH
 --------------------------------
 $ ./bin/windows/zookeeper-server-start.bat config/zookeeper.properties
