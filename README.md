@@ -26,3 +26,6 @@ listeners=PLAINTEXT://:9092
 
 zookeeper
 dataDir=c:/tmp/zookeeper
+
+https://www.sslshopper.com/article-most-common-java-keytool-keystore-commands.html
+https://gist.github.com/alvarow/1a42e608d74474ac39aa
