@@ -3,14 +3,18 @@ https://www.onlinetutorialspoint.com/spring-boot/sending-spring-boot-kafka-json-
 
 https://www.javainuse.com/spring/spring-boot-apache-kafka-hello-world
 
-https://www.sohamkamani.com/blog/2017/11/22/how-to-install-and-run-kafka/
 
-https://www.confluent.io/blog/apache-kafka-spring-boot-application/
+https://www.sohamkamani.com/blog/2017/11/22/how-to-install-and-run-kafka/ 
 
-https://www.onlinetutorialspoint.com/spring-boot/sending-spring-boot-kafka-json-message-to-kafka-topic.html
+https://www.confluent.io/blog/apache-kafka-spring-boot-application/ 
+
+https://www.onlinetutorialspoint.com/spring-boot/sending-spring-boot-kafka-json-message-to-kafka-topic.html  
+
 https://codenotfound.com/blog/
 
+
 https://medium.com/talking-tech-all-around/how-to-enable-and-verify-client-authentication-in-kafka-21e936e670e8
+
 https://docs.confluent.io/2.0.0/kafka/ssl.html
 
 GITBASH
@@ -28,4 +32,6 @@ zookeeper
 dataDir=c:/tmp/zookeeper
 
 https://www.sslshopper.com/article-most-common-java-keytool-keystore-commands.html
+
 https://gist.github.com/alvarow/1a42e608d74474ac39aa
+
