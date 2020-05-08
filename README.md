@@ -40,3 +40,6 @@ https://www.sslshopper.com/article-most-common-java-keytool-keystore-commands.ht
 
 https://gist.github.com/alvarow/1a42e608d74474ac39aa
 
+Download
+wget -c http://apache.mirrors.hoobly.com/kafka/2.5.0/kafka_2.12-2.5.0.tgz -O - | tar -xz
+
