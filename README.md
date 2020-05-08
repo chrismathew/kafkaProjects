@@ -20,10 +20,15 @@ https://docs.confluent.io/2.0.0/kafka/ssl.html
 GITBASH
 --------------------------------
 $ ./bin/windows/zookeeper-server-start.bat config/zookeeper.properties
+
 $ ./bin/windows/kafka-server-start.bat config/server.properties
+
 ./bin/windows/kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic chris-topic
+
 ./bin/windows/kafka-console-producer.bat --broker-list localhost:9092 --topic chris-topic
+
 ./bin/windows/kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic chris-topic
+
 
 server.properties
 listeners=PLAINTEXT://:9092
