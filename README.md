@@ -43,3 +43,27 @@ https://gist.github.com/alvarow/1a42e608d74474ac39aa
 Download
 wget -c http://apache.mirrors.hoobly.com/kafka/2.5.0/kafka_2.12-2.5.0.tgz -O - | tar -xz
 
+LINUX
+bin/zookeeper-server-start.sh  config/zookeeper.properties &
+
+bin/kafka-server-start.sh  config/server.properties
+
+bin/kafka-topics.sh --create  --zookeeper localhost:2181  --topic   chris-topic  --partitions 1  --replication-factor 1
+
+
+bin/kafka-topics.sh --list --zookeeper localhost:2181
+
+
+
+bin/kafka-console-producer.sh  --broker-list localhost:9092  --topic chris-topic
+
+ hello world
+
+
+bin/kafka-console-consumer.sh  --bootstrap-server localhost:9092   --topic chris-topic --from-beginning
+
+
+
+bin/kafka-console-producer.sh --broker-list localhost:9092 --topic connect-test < /Users/chrismathew/kafkaCode/ipinyou.contest.dataset/training1st/bid.20130311.txt
+
+
