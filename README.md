@@ -1,3 +1,5 @@
+https://medium.com/trendyol-tech/how-to-integration-test-on-spring-kafka-producer-cb9d1caf0795
+
 # kafkaProjectsSOMETHING CHANGED IN KAFKA
 https://www.onlinetutorialspoint.com/spring-boot/sending-spring-boot-kafka-json-message-to-kafka-topic.html
 
