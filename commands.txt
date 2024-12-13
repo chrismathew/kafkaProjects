@@ -1,0 +1,38 @@
+
+bin/windows/zookeeper-server-start.bat config/zookeeper.properties
+
+%ZOOKEEPER_HOME%\bin
+
+
+kafka-topics.bat —create —zookeeper localhost:2181 —replication-factor 1 —partitions 1 —topic sql-insert
+
+kafka-console-producer.bat —broker-list localhost:9092 —topic sql-insert
+
+kafka-console-consumer.bat -bootstrap-server localhost:2181 -topic sql-insert
+
+
+GITBASH
+--------------------------------
+$ ./bin/windows/zookeeper-server-start.bat config/zookeeper.properties
+$ ./bin/windows/kafka-server-start.bat config/server.properties
+./bin/windows/kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic chris-topic
+./bin/windows/kafka-console-producer.bat --broker-list localhost:9092 --topic chris-topic2
+./bin/windows/kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic chris-topic
+
+
+./bin/windows/kafka-console-consumer.bat --bootstrap-server localhost:9093 --topic chris-topic2 --from-beginning --consumer.config client-ssl.properties
+
+copied the client keystore.jks and truststore.jks to windows and hitting from there.
+
+ ./bin/windows/kafka-console-consumer.bat --bootstrap-server chrismathew691c.mylabserver.com:9093 --topic chris-topic --from-beginning --consumer.config c:/kafka2/config/client-ssl.properties
+ 
+ ---------------------------------
+ ON LA SERVER
+ -----------------------------------
+sudo ./bin/zookeeper-server-start.sh config/zookeeper.properties
+sudo ./bin/kafka-server-start.sh config/server.properties
+sudo ./bin/kafka-console-producer.sh --broker-list localhost:9092 --topic chris-topic2
+sudo ./bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic chris-topic2
+
+
+curl "https://www.apache.org/dist/kafka/2.1.1/kafka_2.11-2.1.1.tgz" -o ~/Downloads/kafka.tgz
